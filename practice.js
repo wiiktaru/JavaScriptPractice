@@ -19,14 +19,26 @@ function remainingTime(age) {
 }
 //remainingTime(56);
 
-//Outputs and return values
+//Outputs and return values & condition logic
 //Bmi calculator that takes weight and height as an input and returns bmi value as an output value
 function bmiCalculator(weight, height) {
   var bmi = weight / Math.pow(height, 2);
 
-  bmi = Math.floor(bmi);
+  bmi = bmi.toFixed(2);
 
-  return bmi;
+  var result;
+
+  if (bmi < 18.5) {
+    result = "Your bmi is " + bmi + ", so you are underweight.";
+  } else if (bmi <= 24.9) {
+    result = "Your bmi is " + bmi + ", so you have normal weight.";
+  } else {
+    result = "Your bmi is " + bmi + ", so you are overweight.";
+  }
+
+  return result;
 }
 
 console.log(bmiCalculator(65, 1.8));
+console.log(bmiCalculator(102, 1.8));
+console.log(bmiCalculator(50, 1.8));
