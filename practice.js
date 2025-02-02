@@ -70,7 +70,7 @@ function whoPay(names) {
 }
 //console.log(whoPay(names));
 
-// Control statements - while loop
+// Control statements
 //
 var count = 99;
 
@@ -101,4 +101,24 @@ function beerBottles() {
   );
 }
 
-beerBottles();
+//beerBottles();
+
+// FizzBuzz challenge
+var array = [];
+
+function FizzBuzz() {
+  for (let i = 1; i <= 100; i++) {
+    if (i % 15 === 0) {
+      array.push("FizzBuzz");
+    } else if (i % 3 === 0) {
+      array.push("Fizz");
+    } else if (i % 5 === 0) {
+      array.push("Buzz");
+    } else {
+      array.push(i);
+    }
+  }
+  console.log(array);
+}
+
+FizzBuzz();
