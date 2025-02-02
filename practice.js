@@ -17,5 +17,16 @@ function remainingTime(age) {
       " months left."
   );
 }
+//remainingTime(56);
 
-remainingTime(56);
+//Outputs and return values
+//Bmi calculator that takes weight and height as an input and returns bmi value as an output value
+function bmiCalculator(weight, height) {
+  var bmi = weight / Math.pow(height, 2);
+
+  bmi = Math.floor(bmi);
+
+  return bmi;
+}
+
+console.log(bmiCalculator(65, 1.8));
