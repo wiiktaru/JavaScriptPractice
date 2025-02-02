@@ -39,6 +39,19 @@ function bmiCalculator(weight, height) {
   return result;
 }
 
-console.log(bmiCalculator(65, 1.8));
-console.log(bmiCalculator(102, 1.8));
-console.log(bmiCalculator(50, 1.8));
+//console.log(bmiCalculator(65, 1.8));
+//console.log(bmiCalculator(102, 1.8));
+//console.log(bmiCalculator(50, 1.8));
+
+//Leap year challenge
+function isLeapYear(year) {
+  if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+    var result = "leap year";
+    return result;
+  } else {
+    var result = "not a leap year";
+    return result;
+  }
+}
+
+//console.log(isLeapYear(2019));
