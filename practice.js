@@ -69,3 +69,36 @@ function whoPay(names) {
   return result;
 }
 //console.log(whoPay(names));
+
+// Control statements - while loop
+//
+var count = 99;
+
+function beerBottles() {
+  while (count > 1) {
+    console.log(
+      count + " bottles of beer on the wall, " + count + " bottles of beer."
+    );
+    console.log(
+      "Take on down and pass it around, " +
+        count +
+        " bottles of beer on the wall"
+    );
+
+    count--;
+  }
+
+  console.log(
+    count + " bottles of beer on the wall, " + count + " bottles of beer."
+  );
+  console.log(
+    "Take on down and pass it around, no more bottles of beer on the wall"
+  );
+
+  console.log("No more bottles of beer on the wall, no more bottles of beer.");
+  console.log(
+    "Go to the store and buy some more, 99 bottles of beer on the wall"
+  );
+}
+
+beerBottles();
