@@ -53,5 +53,19 @@ function isLeapYear(year) {
     return result;
   }
 }
-
 //console.log(isLeapYear(2019));
+
+// Arrays
+//Will select a random name from array to pay lunches
+var names = ["Keijo", "Kalevi", "Pentti"];
+
+function whoPay(names) {
+  var random = Math.random();
+  random = random * names.length;
+  random = Math.floor(random);
+
+  var result = names[random] + " is paying.";
+
+  return result;
+}
+//console.log(whoPay(names));
