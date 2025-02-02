@@ -120,5 +120,21 @@ function FizzBuzz() {
   }
   console.log(array);
 }
+// FizzBuzz();
 
-FizzBuzz();
+// The Fibonacci Code Challenge
+function fibonacciGenerator(arraySize) {
+  var fibonacciArray = [];
+
+  for (var i = 0; i < arraySize; i++) {
+    if (i <= 1) {
+      fibonacciArray.push(i);
+    } else {
+      var arrayNumber = fibonacciArray[i - 2] + fibonacciArray[i - 1];
+      fibonacciArray.push(arrayNumber);
+    }
+  }
+  return fibonacciArray;
+}
+
+//console.log(fibonacciGenerator(15));
